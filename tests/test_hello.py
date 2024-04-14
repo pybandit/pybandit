@@ -25,6 +25,8 @@ def my_wallet():
     :return:
     """
     return Wallet()
+
+
 @pytest.mark.parametrize(
     "earned,spent,expected",
     [
