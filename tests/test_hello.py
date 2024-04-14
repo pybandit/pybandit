@@ -3,6 +3,8 @@ import pytest
 
 class InsufficientAmount(Exception):
     pass
+
+
 class Wallet(object):
     def __init__(self, initial_amount=0):
         self.balance = initial_amount
