@@ -22,8 +22,6 @@ class Wallet(object):
 def my_wallet():
     """Returns a Wallet instance with a zero balance and the best practice here is"""
     return Wallet()
-
-
 @pytest.mark.parametrize(
     "earned,spent,expected",
     [
