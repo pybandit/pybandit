@@ -20,7 +20,10 @@ class Wallet(object):
 
 @pytest.fixture
 def my_wallet():
-    """Returns a Wallet instance with a zero balance and the best practice here is"""
+    """
+    Returns a Wallet instance with a zero balance and the best practice here is the real info
+    :return:
+    """
     return Wallet()
 @pytest.mark.parametrize(
     "earned,spent,expected",
