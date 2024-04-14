@@ -9,7 +9,9 @@ jobs:
         with:
           version: 0.3.7
       - run: | 
+          pip install ruff==0.3.7
           ruff check .
+          ruff format .
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'style fixes by ruff'
