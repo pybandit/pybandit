@@ -28,11 +28,7 @@ def test_custom_initialization(custom_bandit):
     assert custom_bandit.std_dev == 5, "Custom std_dev should be 5"
 
 
-@pytest.mark.parametrize("mean, std_dev", [
-    (0, 1),
-    (5, 2),
-    (-3, 0.5)
-])
+@pytest.mark.parametrize("mean, std_dev", [(0, 1), (5, 2), (-3, 0.5)])
 def test_pull_distribution_properties(mean, std_dev):
     """
     Test that the majority of the pull method returns values fall within 3 standard deviations
@@ -41,17 +37,23 @@ def test_pull_distribution_properties(mean, std_dev):
     bandit = GaussianBandit(mean, std_dev)
     rewards = np.array([bandit.pull() for _ in range(9999999)])
 
-    within_1st = np.mean((mean - 1 * std_dev < rewards) & (rewards < mean + 1 * std_dev))
+    within_1st = np.mean(
+        (mean - 1 * std_dev < rewards) & (rewards < mean + 1 * std_dev)
+    )
 
     # At least 68% of rewards should fall within 1 standard deviations of the mean
     assert within_1st >= 0.68
 
-    within_2nd = np.mean((mean - 2 * std_dev < rewards) & (rewards < mean + 2 * std_dev))
+    within_2nd = np.mean(
+        (mean - 2 * std_dev < rewards) & (rewards < mean + 2 * std_dev)
+    )
     # At least 95% of rewards should fall within 2 standard deviations of the mean
     assert within_2nd >= 0.95
 
     # At least 99.7% of rewards should fall within 3 standard deviations of the mean
-    within_3sd = np.mean((mean - 3 * std_dev < rewards) & (rewards < mean + 3 * std_dev))
+    within_3sd = np.mean(
+        (mean - 3 * std_dev < rewards) & (rewards < mean + 3 * std_dev)
+    )
     assert within_3sd >= 0.97
 
 
@@ -74,6 +76,9 @@ def bandit(request):
 def test_pull_statistical_properties(bandit):
     """Statistical test to check if generated rewards are normally distributed (requires scipy)."""
     from scipy import stats
+
     rewards = [bandit.pull() for _ in range(9999999)]
     k2, p = stats.normaltest(rewards)
-    assert p > 0.05, "p-value should be greater than 0.05, indicating normal distribution"
+    assert (
+        p > 0.05
+    ), "p-value should be greater than 0.05, indicating normal distribution"

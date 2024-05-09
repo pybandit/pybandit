@@ -1,5 +1,3 @@
-from .gaussian import (
-    GaussianBandit
-)
+from .gaussian import GaussianBandit
 
 __all__ = ["GaussianBandit"]
