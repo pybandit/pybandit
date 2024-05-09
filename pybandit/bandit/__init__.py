@@ -1,0 +1,3 @@
+from .gaussian import (
+    GaussianBandit
+)
