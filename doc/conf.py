@@ -49,17 +49,6 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # a list of builtin themes.
 #
 html_theme = "pydata_sphinx_theme"
-
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
-# html_static_path = ['_static']
-
-# Set up intersphinx maps
-intersphinx_mapping = {"numpy": ("https://numpy.org/doc/stable", None)}
-
-# -- Options for HTML output -------------------------------------------------
-
 html_logo = "_static/logo.png"
 html_favicon = "_static/logo.png"
 
@@ -119,5 +108,16 @@ html_theme_options = {
         "**/*": ["page-toc"],
         "examples/no-sidebar": [],
     },
-    # "back_to_top_button": False,
+    "back_to_top_button": False,
 }
+
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
+# html_static_path = ['_static']
+
+# Set up intersphinx maps
+intersphinx_mapping = {"numpy": ("https://numpy.org/doc/stable", None)}
+
+# -- Options for HTML output -------------------------------------------------
+
