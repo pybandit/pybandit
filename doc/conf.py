@@ -83,7 +83,7 @@ html_theme_options = {
     "logo": {
         "text": "PyBandit",
         "image_dark": "_static/logo.png",
-    }
+    },
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
