@@ -1,4 +1,4 @@
-Welcome to pybandit documentation!
+PyBandit documentation!
 ===================================
 
 
@@ -8,10 +8,3 @@ Welcome to pybandit documentation!
 
    reference/index
    development/index
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
