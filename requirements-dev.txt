@@ -13,6 +13,7 @@ hypothesis
 # For linting
 ruff==0.3.7
 # For doc testing
+sphinx
 sphinx_design
 pydata-sphinx-theme
 ipython
