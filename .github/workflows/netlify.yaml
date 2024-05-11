@@ -26,6 +26,7 @@ jobs:
       run: |
         cd doc
         make clean html
+        ls -al
 
     - name: Deploy to Netlify
       uses: nwtgck/actions-netlify@v1.1
