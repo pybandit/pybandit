@@ -84,6 +84,26 @@ html_theme_options = {
         "text": "PyBandit",
         "image_dark": "_static/logo.png",
     },
+    "use_edit_page_button": False,
+    "show_toc_level": 1,
+    "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
+    "show_nav_level": 1,
+    "announcement": '<div class="sidebar-message">This is a community-supported project. If youd like to contribute, <a href="https://github.com/pybandit/pybandit.git">check out our GitHub repository.</a> Your contributions are welcome!</div>',
+    "show_version_warning_banner": True,
+    # "navbar_center": ["version-switcher", "navbar-nav"],
+    # "navbar_start": ["navbar-logo"],
+    # "navbar_end": ["theme-switcher", "navbar-icon-links"],
+    "navbar_persistent": ["search-button"],
+    # "primary_sidebar_end": ["custom-template", "sidebar-ethical-ads"],
+    # "article_footer_items": ["test", "test"],
+    # "content_footer_items": ["test", "test"],
+    "footer_start": ["copyright"],
+    "footer_center": ["sphinx-version"],
+    "secondary_sidebar_items": {
+        "**/*": ["page-toc"],
+        "examples/no-sidebar": [],
+    },
+    "back_to_top_button": False,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -93,5 +113,3 @@ html_theme_options = {
 
 # Set up intersphinx maps
 intersphinx_mapping = {"numpy": ("https://numpy.org/doc/stable", None)}
-
-# -- Options for HTML output -------------------------------------------------
