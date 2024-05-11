@@ -1,8 +1,11 @@
+import numpy as np
 import pytest
 
 from pybandit.bandit.bernoulli import (
     BernoulliBandit,
-)  # Assuming the class is saved in bernoulli_bandit.py
+)
+
+np.random.seed(0)
 
 
 def test_initialization():

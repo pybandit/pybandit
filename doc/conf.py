@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.abspath("../pybandit"))
 
 # -- Project information -----------------------------------------------------
 
-project = "Pybandit"
+project = "pybandit"
 copyright = "2024, tuhinsharma"
 author = "tuhinsharma121"
 
@@ -49,6 +49,59 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # a list of builtin themes.
 #
 html_theme = "pydata_sphinx_theme"
+html_logo = "_static/logo.png"
+html_favicon = "_static/logo.png"
+#
+html_theme_options = {
+    "external_links": [
+        {
+            "url": "https://tuhinsharma.com",
+            "name": "Author",
+        }
+    ],
+    "header_links_before_dropdown": 4,
+    "icon_links": [
+        {
+            "name": "PyPI",
+            "url": "https://pypi.org/project/pybandit",
+            "icon": "fa-custom fa-pypi",
+        },
+        {
+            "name": "GitHub",
+            "url": "https://github.com/pybandit/pybandit.git",
+            "icon": "fa-brands fa-github",
+        },
+        {
+            "name": "pybandit",
+            "url": "https://pybandit.org",
+            "icon": "fa-custom fa-pydata",
+        },
+    ],
+    # alternative way to set twitter and github header icons
+    # "github_url": "https://github.com/pydata/pydata-sphinx-theme",
+    # "twitter_url": "https://twitter.com/PyData",
+    "logo": {
+        "text": "PyBandit",
+    },
+    "use_edit_page_button": False,
+    "show_toc_level": 1,
+    "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
+    "show_nav_level": 1,
+    # "announcement": '<div class="sidebar-message">This is a community-supported project. If youd like to contribute, <a href="https://github.com/pybandit/pybandit.git">check out our GitHub repository.</a> Your contributions are welcome!</div>',
+    # "show_version_warning_banner": True,
+    # "navbar_center": ["version-switcher", "navbar-nav"],
+    # "navbar_start": ["navbar-logo"],
+    # "navbar_end": ["theme-switcher", "navbar-icon-links"],
+    "navbar_persistent": ["search-button"],
+    # "primary_sidebar_end": ["custom-template", "sidebar-ethical-ads"],
+    # "article_footer_items": ["test", "test"],
+    # "content_footer_items": ["test", "test"],
+    # "footer_start": ["copyright"],
+    # "footer_center": ["sphinx-version"],
+    # "secondary_sidebar_items": {
+    #     "**/*": ["page-toc"]
+    # }
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
