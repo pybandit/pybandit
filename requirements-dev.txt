@@ -15,5 +15,5 @@ ruff==0.3.7
 # For doc testing
 sphinx==7.1.2
 sphinx_design==0.5.0
-pydata-sphinx-theme==0.15.2
+pydata-sphinx-theme==0.14.4
 ipython
