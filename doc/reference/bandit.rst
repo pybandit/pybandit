@@ -1,0 +1,8 @@
+bandit
+======
+
+..  automodule:: bandit
+    :members:
+
+
+
