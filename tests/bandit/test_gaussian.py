@@ -82,5 +82,5 @@ def test_pull_statistical_properties(bandit):
     rewards = [bandit.pull() for _ in range(9999999)]
     k2, p = stats.normaltest(rewards)
     assert (
-            p > 0.05
+        p > 0.05
     ), "p-value should be greater than 0.05, indicating normal distribution"
