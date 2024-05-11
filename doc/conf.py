@@ -118,6 +118,6 @@ html_theme_options = {
     "secondary_sidebar_items": {
         "**/*": ["page-toc"],
         "examples/no-sidebar": [],
-    }
+    },
     # "back_to_top_button": False,
 }
