@@ -17,11 +17,14 @@ class BernoulliBandit:
 
     Examples
     --------
-    >>> bandit = BernoulliBandit(0.7)
+    >>> import numpy as np
+    >>> np.random.seed(0)
+    >>> import pybandit as pb
+    >>> bandit = pb.bandit.BernoulliBandit(0.7)
     >>> bandit.pull()  # This might return either 0 or 1, depending on the probability
     1
     >>> [bandit.pull() for _ in range(5)]  # Pulling the arm 5 times
-    [1, 0, 1, 1, 1]
+    [0, 1, 1, 1, 1]
     """
 
     def __init__(self, p):

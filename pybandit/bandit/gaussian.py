@@ -14,9 +14,14 @@ class GaussianBandit:
 
     Examples
     --------
+    >>> import numpy as np
     >>> np.random.seed(0)
-    >>> bandit = GaussianBandit(mu=0, sigma=1)
+    >>> import pybandit as pb
+    >>> bandit = pb.bandit.GaussianBandit(mean=0, std_dev=1)
     >>> bandit.pull()  # Random output, example: 1.764052345967664
+    1.764052345967664
+    >>> [bandit.pull() for _ in range(5)]  # Pulling the arm 5 times
+    [0.4001572083672233, 0.9787379841057392, 2.240893199201458, 1.8675579901499675, -0.977277879876411]
     """
 
     def __init__(self, mean=0.0, std_dev=1.0):
