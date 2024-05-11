@@ -1,8 +1,11 @@
+import numpy as np
 import pytest
 
 from pybandit.bandit.bernoulli import (
     BernoulliBandit,
-)  # Assuming the class is saved in bernoulli_bandit.py
+)
+
+np.random.seed(0)
 
 
 def test_initialization():
@@ -72,5 +75,5 @@ def test_probability_distribution():
     successes = sum(results)
     proportion = successes / trials
     assert (
-        pytest.approx(proportion, 0.02) == p
+            pytest.approx(proportion, 0.02) == p
     ), f"Results should approximate the probability {p} within a reasonable margin."
