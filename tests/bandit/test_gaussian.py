@@ -3,6 +3,8 @@ import pytest
 
 from pybandit.bandit.gaussian import GaussianBandit
 
+np.random.seed(0)
+
 
 @pytest.fixture
 def default_bandit():
