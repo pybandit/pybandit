@@ -82,7 +82,6 @@ html_theme_options = {
     # "twitter_url": "https://twitter.com/PyData",
     "logo": {
         "text": "PyBandit",
-        "image_dark": "_static/logo.png",
     },
     "use_edit_page_button": False,
     "show_toc_level": 1,
@@ -97,11 +96,10 @@ html_theme_options = {
     # "primary_sidebar_end": ["custom-template", "sidebar-ethical-ads"],
     # "article_footer_items": ["test", "test"],
     # "content_footer_items": ["test", "test"],
-    "footer_start": ["copyright"],
-    "footer_center": ["sphinx-version"],
+    # "footer_start": ["copyright"],
+    # "footer_center": ["sphinx-version"],
     "secondary_sidebar_items": {
-        "**/*": ["page-toc"],
-        "examples/no-sidebar": [],
+        "**/*": ["page-toc"]
     }
 }
 
