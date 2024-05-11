@@ -98,9 +98,9 @@ html_theme_options = {
     # "content_footer_items": ["test", "test"],
     # "footer_start": ["copyright"],
     # "footer_center": ["sphinx-version"],
-    # "secondary_sidebar_items": {
-    #     "**/*": ["page-toc"]
-    # },
+    "secondary_sidebar_items": {
+        "**/*": ["page-toc"]
+    }
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
