@@ -2,18 +2,3 @@ numpy
 scipy
 pandas
 pymc>=5
-# For testing and benchmarking
-pytest==8.1.1
-pytest-cov
-pytest-xdist
-pytest-timeout
-pytest-fail-slow
-asv >=0.6
-hypothesis
-# For linting
-ruff==0.3.7
-# For doc testing
-sphinx
-sphinx_design
-pydata-sphinx-theme
-ipython
