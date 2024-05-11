@@ -12,20 +12,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v2
+    - uses: actions/setup-python@v2
       with:
         python-version: '3.11'
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        python -m pip install -r requirements-dev.txt
-        pip install -e .
-        cd doc
-        make clean html
-        ls -al
-    - name: Deploy to Netlify
-      uses: nwtgck/actions-netlify@v1.1
+    - uses: nwtgck/actions-netlify@v1.1
       with:
         publish-dir: 'doc/_build/html'
         production-branch: main
@@ -38,3 +28,10 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         timeout-minutes: 1
+    - run: |
+        python -m pip install --upgrade pip
+        python -m pip install -r requirements-dev.txt
+        pip install -e .
+        cd doc
+        make clean html
+        ls -al
