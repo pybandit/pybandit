@@ -120,4 +120,3 @@ html_theme_options = {
 intersphinx_mapping = {"numpy": ("https://numpy.org/doc/stable", None)}
 
 # -- Options for HTML output -------------------------------------------------
-
