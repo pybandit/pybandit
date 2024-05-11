@@ -103,7 +103,6 @@ html_theme_options = {
         "**/*": ["page-toc"],
         "examples/no-sidebar": [],
     },
-    "back_to_top_button": False,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
