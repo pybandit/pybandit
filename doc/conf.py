@@ -88,8 +88,8 @@ html_theme_options = {
     "show_toc_level": 1,
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
     "show_nav_level": 1,
-    "announcement": '<div class="sidebar-message">This is a community-supported project. If youd like to contribute, <a href="https://github.com/pybandit/pybandit.git">check out our GitHub repository.</a> Your contributions are welcome!</div>',
-    "show_version_warning_banner": True,
+    # "announcement": '<div class="sidebar-message">This is a community-supported project. If youd like to contribute, <a href="https://github.com/pybandit/pybandit.git">check out our GitHub repository.</a> Your contributions are welcome!</div>',
+    # "show_version_warning_banner": True,
     # "navbar_center": ["version-switcher", "navbar-nav"],
     # "navbar_start": ["navbar-logo"],
     # "navbar_end": ["theme-switcher", "navbar-icon-links"],
@@ -98,11 +98,7 @@ html_theme_options = {
     # "article_footer_items": ["test", "test"],
     # "content_footer_items": ["test", "test"],
     "footer_start": ["copyright"],
-    "footer_center": ["sphinx-version"],
-    "secondary_sidebar_items": {
-        "**/*": ["page-toc"],
-        "examples/no-sidebar": [],
-    },
+    "footer_center": ["sphinx-version"]
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
