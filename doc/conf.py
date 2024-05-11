@@ -62,14 +62,14 @@ html_theme_options = {
     "header_links_before_dropdown": 4,
     "icon_links": [
         {
-            "name": "GitHub",
-            "url": "https://github.com/pybandit/pybandit.git",
-            "icon": "fa-brands fa-github",
-        },
-        {
             "name": "PyPI",
             "url": "https://pypi.org/project/pybandit",
             "icon": "fa-custom fa-pypi",
+        },
+        {
+            "name": "GitHub",
+            "url": "https://github.com/pybandit/pybandit.git",
+            "icon": "fa-brands fa-github",
         },
         {
             "name": "pybandit",
@@ -98,9 +98,9 @@ html_theme_options = {
     # "content_footer_items": ["test", "test"],
     # "footer_start": ["copyright"],
     # "footer_center": ["sphinx-version"],
-    "secondary_sidebar_items": {
-        "**/*": ["page-toc"]
-    }
+    # "secondary_sidebar_items": {
+    #     "**/*": ["page-toc"]
+    # },
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
