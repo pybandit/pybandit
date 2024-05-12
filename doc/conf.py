@@ -33,7 +33,11 @@ extensions = [
     "sphinx_design",
     "IPython.sphinxext.ipython_directive",
     "IPython.sphinxext.ipython_console_highlighting",
+    "sphinx.ext.autosectionlabel",
+    "myst_parser"
 ]
+
+suppress_warnings = ['autosectionlabel.*']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -109,4 +113,4 @@ html_theme_options = {
 # html_static_path = ['_static']
 
 # Set up intersphinx maps
-intersphinx_mapping = {"numpy": ("https://numpy.org/doc/stable", None)}
+# intersphinx_mapping = {"numpy": ("https://numpy.org/doc/stable", None)}
