@@ -33,8 +33,7 @@ extensions = [
     "sphinx_design",
     "IPython.sphinxext.ipython_directive",
     "IPython.sphinxext.ipython_console_highlighting",
-    "sphinx.ext.autosectionlabel",
-    "myst_parser"
+    "sphinx.ext.autosectionlabel"
 ]
 
 suppress_warnings = ['autosectionlabel.*']
