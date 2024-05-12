@@ -1,5 +1,5 @@
 <picture align="center">
-  <img alt="Pandas Logo" src="doc/_static/logo-favicon.png">
+  <img alt="Pandas Logo" src="doc/_static/logo-pybandit.png">
 </picture>
 
 -----------------
