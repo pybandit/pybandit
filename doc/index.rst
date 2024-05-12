@@ -21,7 +21,7 @@ multiarmed bandit algorithms.
         **User guide**
         ^^^
 
-        The user guide provides in-depth information on the
+        The user guide provides information on the
         key concepts of PyBandit.
 
         +++
@@ -30,13 +30,13 @@ multiarmed bandit algorithms.
             :color: secondary
             :click-parent:
 
-            User guide
+            Key Concepts
 
     .. grid-item-card::
         :img-top: _static/logo-api.png
         :text-align: center
 
-        **API reference**
+        **Reference guide**
         ^^^
 
         The reference guide provides detailed description of Pybandit
@@ -48,17 +48,17 @@ multiarmed bandit algorithms.
             :color: secondary
             :click-parent:
 
-            Reference guide
+            API reference
 
     .. grid-item-card::
         :img-top: _static/logo-build.png
         :text-align: center
 
-        **Building from source**
+        **Build guide**
         ^^^
 
-        Want to build from source rather than use a Python distribution or
-        pre-built SciPy binary?
+        The reference guide provides detailed information on how to
+        build from Source.
 
         +++
 
@@ -66,7 +66,7 @@ multiarmed bandit algorithms.
             :color: secondary
             :click-parent:
 
-            Build guide
+            Build from source
 
     .. grid-item-card::
         :img-top: _static/logo-developer.png
@@ -75,8 +75,8 @@ multiarmed bandit algorithms.
         **Developer guide**
         ^^^
 
-        Saw a typo in the documentation? Want to improve
-        existing functionalities?
+        The developer guide contains processes on how to
+        contribute to PyBandit.
 
         +++
 
@@ -84,7 +84,7 @@ multiarmed bandit algorithms.
             :color: secondary
             :click-parent:
 
-            Dev guide
+            Contribute
 
 .. toctree::
    :maxdepth: 1
