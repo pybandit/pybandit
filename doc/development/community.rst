@@ -1,22 +1,24 @@
-=====================
-Contributor community
-=====================
+.. _community:
 
-pybandit is a community-driven open source project developed by a large group
+*********************
+Contributor community
+*********************
+
+PyBandit is a community-driven open source project developed by a large group
 of `contributors <https://github.com/pybandit/pybandit/graphs/contributors>`_
 and a smaller group of `maintainers <https://pybandit.pydata.org/about/team.html>`_.
-The pybandit leadership has made a strong commitment to creating an open,
-inclusive, and positive community. Please read the pybandit `Code of Conduct
+The PyBandit leadership has made a strong commitment to creating an open,
+inclusive, and positive community. Please read the PyBandit `Code of Conduct
 <https://pybandit.pydata.org/community/coc.html>`_ for guidance on how to
 interact with others in a way that makes the community thrive.
 
 We offer several meetings and communication channels to share knowledge and
-connect with others within the pybandit community.
+connect with others within the PyBandit community.
 
 Community meeting
 -----------------
 
-The pybandit Community Meeting is a regular sync meeting for the project's
+The PyBandit Community Meeting is a regular sync meeting for the project's
 maintainers which is open to the community. Everyone is welcome to attend and
 contribute to conversations.
 
@@ -40,14 +42,12 @@ We aim to answer questions about getting started, or help with work in
 progress when possible, as well as get to know each other and share our
 learnings and experiences.
 
-The agenda for the next meeting and minutes of past meetings are available in
-`this HackMD <https://hackmd.io/@pybandit/HJgQt1Tei>`__.
 
 Calendar
 --------
 
 This calendar shows all the community meetings. Our community meetings are
-ideal for anyone wanting to contribute to pybandit, or just curious to know how
+ideal for anyone wanting to contribute to PyBandit, or just curious to know how
 current development is going.
 
 .. raw:: html
@@ -65,7 +65,7 @@ These will be published on the same calendar.
 `GitHub issue tracker <https://github.com/pybandit/pybandit/issues>`_
 ----------------------------------------------------------------------
 
-The pybandit contributor community conducts conversations mainly via this channel.
+The PyBandit contributor community conducts conversations mainly via this channel.
 Any community member can open issues to:
 
 - Report bugs, e.g. "I noticed the behavior of a certain function is
@@ -75,8 +75,8 @@ Any community member can open issues to:
 - Ask questions, e.g. "I noticed the behavior of a certain function
   changed between versions. Is this expected?".
 
-    Ideally, your questions should be related to how pybandit works rather
-    than how you use pybandit. `StackOverflow <https://stackoverflow.com/>`_ is
+    Ideally, your questions should be related to how PyBandit works rather
+    than how you use PyBandit. `StackOverflow <https://stackoverflow.com/>`_ is
     better suited for answering usage questions, and we ask that all usage
     questions are first asked on StackOverflow. Thank you for respecting our
     time and wishes. 🙇
@@ -84,21 +84,12 @@ Any community member can open issues to:
 Maintainers and frequent contributors might also open issues to discuss the
 ongoing development of the project. For example:
 
-- Report issues with the CI, GitHub Actions, or the performance of pybandit
+- Report issues with the CI, GitHub Actions, or the performance of PyBandit
 - Open issues relating to the internals
 - Start roadmap discussion aligning on proposals for what to do in future
   releases or changes to the API.
 - Open issues relating to the project's website, logo, or governance
 
-The developer mailing list
---------------------------
-
-The pybandit mailing list `pybandit@python.org <mailto://pybandit@python
-.org>`_ is used for long form
-conversations and to engage people in the wider community who might not
-be active on the issue tracker but we would like to include in discussions.
-
-Join the mailing list and view the archives `here <https://mail.python.org/mailman/listinfo/pybandit>`_.
 
 .. _community.slack:
 
@@ -107,15 +98,7 @@ Community slack
 
 We have a chat platform for contributors, maintainers and potential
 contributors. This is not a space for user questions, rather for questions about
-contributing to pybandit. The slack is a private space, specifically meant for
+contributing to PyBandit. The slack is a private space, specifically meant for
 people who are hesitant to bring up their questions or ideas on a large public
 mailing list or GitHub.
 
-If this sounds like the right place for you, you are welcome to join using
-`this link <https://join.slack.com/t/pybandit-community/shared_invite/zt-2blg6u9k3-K6_XvMRDZWeH7Id274UeIg>`_!
-Please remember to follow our `Code of Conduct <https://pybandit.pydata.org/community/coc.html>`_,
-and be aware that our admins are monitoring for irrelevant messages and will remove folks who use
-our
-slack for spam, advertisements and messages not related to the pybandit contributing community. And
-please remember that slack is not meant to replace the mailing list or issue tracker - all important
-announcements and conversations should still happen there.

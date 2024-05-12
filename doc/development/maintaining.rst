@@ -1,9 +1,11 @@
+.. _maintenance:
+
 ********************
-pybandit maintenance
+PyBandit maintenance
 ********************
 
-This guide is for pybandit' maintainers. It may also be interesting to contributors
-looking to understand the pybandit development process and what steps are necessary
+This guide is for PyBandit maintainers. It may also be interesting to contributors
+looking to understand the PyBandit development process and what steps are necessary
 to become a maintainer.
 
 The main contributing guide is available at :ref:`contributing`.
@@ -11,7 +13,7 @@ The main contributing guide is available at :ref:`contributing`.
 Roles
 -----
 
-pybandit uses two levels of permissions: **triage** and **core** team members.
+PyBandit uses two levels of permissions: **triage** and **core** team members.
 
 Triage members can label and close issues and pull requests.
 
@@ -23,7 +25,7 @@ GitHub publishes the full `list of permissions`_.
 Tasks
 -----
 
-pybandit is largely a volunteer project, so these tasks shouldn't be read as
+PyBandit is largely a volunteer project, so these tasks shouldn't be read as
 "expectations" of triage and maintainers. Rather, they're general descriptions
 of what it means to be a maintainer.
 
@@ -32,7 +34,7 @@ of what it means to be a maintainer.
 * Respond to updates on existing issues and pull requests
 * Drive discussion and decisions on stalled issues and pull requests
 * Provide experience / wisdom on API design questions to ensure consistency and maintainability
-* Project organization (run / attend developer meetings, represent pybandit)
+* Project organization (run / attend developer meetings, represent PyBandit)
 
 https://matthewrocklin.com/blog/2019/05/18/maintainer may be interesting background
 reading.
@@ -43,21 +45,21 @@ Issue triage
 ------------
 
 Triage is an important first step in addressing issues reported by the community, and even
-partial contributions are a great way to help maintain pybandit. Only remove the "Needs Triage"
+partial contributions are a great way to help maintain PyBandit. Only remove the "Needs Triage"
 tag once all of the steps below have been completed.
 
 Here's a typical workflow for triaging a newly opened issue.
 
 1. **Thank the reporter for opening an issue**
 
-   The issue tracker is many people's first interaction with the pybandit project itself,
+   The issue tracker is many people's first interaction with the PyBandit project itself,
    beyond just using the library. As such, we want it to be a welcoming, pleasant
    experience.
 
 2. **Is the necessary information provided?**
 
    Ideally reporters would fill out the issue template, but many don't.
-   If crucial information (like the version of pybandit they used), is missing
+   If crucial information (like the version of PyBandit they used), is missing
    feel free to ask for that and label the issue with "Needs info". The
    report should follow the guidelines in :ref:`contributing.bug_reports`.
    You may want to link to that if they didn't follow the template.
@@ -97,18 +99,18 @@ Here's a typical workflow for triaging a newly opened issue.
 
 5. **Is this a clearly defined feature request?**
 
-   Generally, pybandit prefers to discuss and design new features in issues, before
+   Generally, PyBandit prefers to discuss and design new features in issues, before
    a pull request is made. Encourage the submitter to include a proposed API
    for the new feature. Having them write a full docstring is a good way to
    pin down specifics.
 
    Tag new feature requests with "Needs Discussion", as we'll need a discussion
-   from several pybandit maintainers before deciding whether the proposal is in
-   scope for pybandit.
+   from several PyBandit maintainers before deciding whether the proposal is in
+   scope for PyBandit.
 
 6. **Is this a usage question?**
 
-   We prefer that usage questions are asked on StackOverflow with the pybandit
+   We prefer that usage questions are asked on StackOverflow with the PyBandit
    tag. https://stackoverflow.com/questions/tagged/pybandit
 
    If it's easy to answer, feel free to link to the relevant documentation section,
@@ -136,8 +138,8 @@ to  investigate regressions is by using
 which finds the first commit that introduced the bug.
 
 For example: a user reports that ``pd.Series([1, 1]).sum()`` returns ``3``
-in pybandit version ``1.5.0`` while in version ``1.4.0`` it returned ``2``. To begin,
-create a file ``t.py`` in your pybandit directory, which contains
+in PyBandit version ``1.5.0`` while in version ``1.4.0`` it returned ``2``. To begin,
+create a file ``t.py`` in your PyBandit directory, which contains
 
 .. code-block:: python
 
@@ -205,7 +207,7 @@ Here are some things to check when reviewing a pull request.
 Backporting
 -----------
 
-pybandit supports point releases (e.g. ``1.4.3``) that aim to:
+PyBandit supports point releases (e.g. ``1.4.3``) that aim to:
 
 1. Fix bugs in new features introduced in the first minor version release.
 
@@ -215,7 +217,7 @@ pybandit supports point releases (e.g. ``1.4.3``) that aim to:
 
   * e.g. If a feature worked in ``1.2`` and stopped working since ``1.3``, a fix can be applied in ``1.4.3``.
 
-Since pybandit minor releases are based on GitHub branches (e.g. point release of ``1.4`` are based off the ``1.4.x`` branch),
+Since PyBandit minor releases are based on GitHub branches (e.g. point release of ``1.4`` are based off the ``1.4.x`` branch),
 "backporting" means merging a pull request fix to the ``main`` branch and correct minor branch associated with the next point release.
 
 By default, if a pull request is assigned to the next point release milestone within the GitHub interface,
@@ -234,9 +236,9 @@ This will trigger a workflow which will backport a given change to a branch
 Cleaning up old issues
 ----------------------
 
-Every open issue in pybandit has a cost. Open issues make finding duplicates harder,
-and can make it harder to know what needs to be done in pybandit. That said, closing
-issues isn't a goal on its own. Our goal is to make pybandit the best it can be,
+Every open issue in PyBandit has a cost. Open issues make finding duplicates harder,
+and can make it harder to know what needs to be done in PyBandit. That said, closing
+issues isn't a goal on its own. Our goal is to make PyBandit the best it can be,
 and that's best done by ensuring that the quality of our open issues is high.
 
 Occasionally, bugs are fixed but the issue isn't linked to in the Pull Request.
@@ -268,7 +270,7 @@ If closing the pull request, then please comment on the original issue that
 "There's a stalled PR at #1234 that may be helpful.", and perhaps label the issue
 as "Good first issue" if the PR was relatively close to being accepted.
 
-Becoming a pybandit maintainer
+Becoming a PyBandit maintainer
 ------------------------------
 
 The full process is outlined in our `governance documents`_. In summary,
@@ -281,11 +283,11 @@ The required steps for adding a maintainer are:
 2. Add the contributor to the appropriate `GitHub Team <https://github.com/orgs/pybandit/teams>`_ if accepted the invitation.
 
   * ``pybandit-core`` is for core team members
-  * ``pybandit-triage`` is for pybandit triage members
+  * ``pybandit-triage`` is for PyBandit triage members
 
 If adding to ``pybandit-core``, there are two additional steps:
 
-3. Add the contributor to the pybandit Google group.
+3. Add the contributor to the PyBandit Google group.
 4. Create a pull request to add the contributor's GitHub handle to ``pybandit/pybandit/web/pybandit/config.yml``.
 
 The current list of core-team members is at
@@ -305,7 +307,7 @@ Only core team members can merge pull requests. We have a few guidelines.
    core team members is fine if the change is something you're very confident
    about.
 2. You should not merge pull requests that have an active discussion, or pull
-   requests that has any ``-1`` votes from a core maintainer. pybandit operates
+   requests that has any ``-1`` votes from a core maintainer. PyBandit operates
    by consensus.
 3. For larger changes, it's good to have a +1 from at least two core team members.
 
@@ -328,8 +330,8 @@ a milestone before tagging, you can request the bot to backport it with:
 Release process
 ---------------
 
-The release process makes a snapshot of pybandit (a git commit) available to users with
-a particular version number. After the release the new pybandit version will be available
+The release process makes a snapshot of PyBandit (a git commit) available to users with
+a particular version number. After the release the new PyBandit version will be available
 in the next places:
 
 - Git repo with a `new tag <https://github.com/pybandit/pybandit/tags>`_
@@ -337,7 +339,7 @@ in the next places:
 - Pip packages in the `PyPI <https://pypi.org/project/pybandit/>`_
 - Conda/Mamba packages in `conda-forge <https://anaconda.org/conda-forge/pybandit>`_
 
-The process for releasing a new version of pybandit is detailed next section.
+The process for releasing a new version of PyBandit is detailed next section.
 
 The instructions contain ``<version>`` which needs to be replaced with the version
 to be released (e.g. ``1.5.2``). Also the branch to be released ``<branch>``, which
@@ -349,12 +351,12 @@ versions are released from their branch (e.g. ``1.5.x``).
 Prerequisites
 `````````````
 
-In order to be able to release a new pybandit version, the next permissions are needed:
+In order to be able to release a new PyBandit version, the next permissions are needed:
 
 - Merge rights to the `pybandit <https://github.com/pybandit/pybandit/>`_ and
   `pybandit-feedstock <https://github.com/conda-forge/pybandit-feedstock/>`_ repositories.
   For the latter, open a PR adding your GitHub username to the conda-forge recipe.
-- Permissions to push to ``main`` in the pybandit repository, to push the new tags.
+- Permissions to push to ``main`` in the PyBandit repository, to push the new tags.
 - `Write permissions to PyPI <https://github.com/conda-forge/pybandit-feedstock/pulls>`_.
 - Access to our website / documentation server. Share your public key with the
   infrastructure committee to be added to the ``authorized_keys`` file of the main
@@ -407,7 +409,7 @@ The docs for the new version will be built and published automatically with the 
 which will be triggered when the tag is pushed.
 
 2. Only if the release is a release candidate, we want to create a new branch for it, immediately
-   after creating the tag. For example, if we are releasing pybandit 1.4.0rc0, we would like to
+   after creating the tag. For example, if we are releasing PyBandit 1.4.0rc0, we would like to
    create the branch 1.4.x to backport commits to the 1.4 versions. As well as create a tag to
    mark the start of the development of 1.5.0 (assuming it is the next version)::
 
@@ -422,7 +424,7 @@ which will be triggered when the tag is pushed.
    Be careful to make sure that no wheels are missing (e.g. due to failed builds).
 
    Running scripts/download_wheels.sh with the version that you want to download wheels/the sdist for should do the trick.
-   This script will make a ``dist`` folder inside your clone of pybandit and put the downloaded wheels and sdist there::
+   This script will make a ``dist`` folder inside your clone of PyBandit and put the downloaded wheels and sdist there::
 
     scripts/download_wheels.sh <VERSION>
 

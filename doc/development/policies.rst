@@ -1,3 +1,5 @@
+.. _policies:
+
 ********
 Policies
 ********
@@ -7,10 +9,10 @@ Policies
 Version policy
 ~~~~~~~~~~~~~~
 
-pybandit uses a loose variant of semantic versioning (`SemVer`_) to govern
+PyBandit uses a loose variant of semantic versioning (`SemVer`_) to govern
 deprecations, API compatibility, and version numbering.
 
-A pybandit release number is made up of ``MAJOR.MINOR.PATCH``.
+A PyBandit release number is made up of ``MAJOR.MINOR.PATCH``.
 
 API breaking changes should only occur in **major** releases. These changes
 will be documented, with clear guidance on what is changing, why it's changing,
@@ -19,39 +21,39 @@ and how to migrate existing code to the new behavior.
 Whenever possible, a deprecation path will be provided rather than an outright
 breaking change.
 
-pybandit will introduce deprecations in **minor** releases. These deprecations
+PyBandit will introduce deprecations in **minor** releases. These deprecations
 will preserve the existing behavior while emitting a warning that provide
 guidance on:
 
 * How to achieve similar behavior if an alternative is available
-* The pybandit version in which the deprecation will be enforced.
+* The PyBandit version in which the deprecation will be enforced.
 
 We will not introduce new deprecations in patch releases.
 
 Deprecations will only be enforced in **major** releases. For example, if a
-behavior is deprecated in pybandit 1.2.0, it will continue to work, with a
+behavior is deprecated in PyBandit 1.2.0, it will continue to work, with a
 warning, for all releases in the 1.x series. The behavior will change and the
 deprecation removed in the next major release (2.0.0).
 
 .. note::
 
-   pybandit will sometimes make *behavior changing* bug fixes, as part of
+   PyBandit will sometimes make *behavior changing* bug fixes, as part of
    minor or patch releases. Whether or not a change is a bug fix or an
    API-breaking change is a judgement call. We'll do our best, and we
    invite you to participate in development discussion on the issue
    tracker or mailing list.
 
 These policies do not apply to features marked as **experimental** in the documentation.
-pybandit may change the behavior of experimental features at any time.
+PyBandit may change the behavior of experimental features at any time.
 
 Python support
 ~~~~~~~~~~~~~~
 
-pybandit mirrors the `NumPy guidelines for Python support <https://numpy.org/neps/nep-0029-deprecation_policy.html#implementation>`__.
+PyBandit mirrors the `NumPy guidelines for Python support <https://numpy.org/neps/nep-0029-deprecation_policy.html#implementation>`__.
 
 Security policy
 ~~~~~~~~~~~~~~~
 
-To report a security vulnerability to pybandit, please go to https://github.com/pybandit/pybandit/security/policy and see the instructions there.
+To report a security vulnerability to PyBandit, please go to https://github.com/pybandit/pybandit/security/policy and see the instructions there.
 
 .. _SemVer: https://semver.org
