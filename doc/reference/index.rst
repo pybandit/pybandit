@@ -1,3 +1,6 @@
+.. _reference:
+
+=============
 API Reference
 =============
 
@@ -6,5 +9,3 @@ API Reference
 
    bandit
    agents
-
-
