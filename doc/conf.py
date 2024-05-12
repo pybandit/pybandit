@@ -52,8 +52,8 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # a list of builtin themes.
 #
 html_theme = "pydata_sphinx_theme"
-html_logo = "_static/logo.png"
-html_favicon = "_static/logo.png"
+html_logo = "_static/logo-pybandit.png"
+html_favicon = "_static/logo-favicon.png"
 #
 html_theme_options = {
     "external_links": [
@@ -83,9 +83,7 @@ html_theme_options = {
     # alternative way to set twitter and github header icons
     # "github_url": "https://github.com/pydata/pydata-sphinx-theme",
     # "twitter_url": "https://twitter.com/PyData",
-    "logo": {
-        "text": "PyBandit",
-    },
+
     "use_edit_page_button": False,
     "show_toc_level": 1,
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
