@@ -1,4 +1,10 @@
-# Pybandit
+<picture align="center">
+  <img alt="Pandas Logo" src="doc/_static/logo-favicon.png">
+</picture>
+
+-----------------
+
+# PyBandit : powerful multiarmed bandit toolkit
 
 Welcome to PyBandit, an open-source Python library designed to make experimenting with and deploying multi-armed bandit algorithms simple and accessible. Whether you're a researcher, data scientist, or enthusiast, PyBandit offers a robust platform for exploring bandit algorithms, optimizing decision-making processes, and enhancing your applications with the power of reinforcement learning.
 
