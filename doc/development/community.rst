@@ -101,4 +101,3 @@ contributors. This is not a space for user questions, rather for questions about
 contributing to PyBandit. The slack is a private space, specifically meant for
 people who are hesitant to bring up their questions or ideas on a large public
 mailing list or GitHub.
-

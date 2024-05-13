@@ -6,6 +6,3 @@ bandit
 
 ..  automodule:: bandit
     :members:
-
-
-
