@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup,find_packages
 
 
 # Function to read the list of requirements from requirements.txt
