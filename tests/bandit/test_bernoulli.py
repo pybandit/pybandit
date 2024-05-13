@@ -1,9 +1,7 @@
 import numpy as np
 import pytest
 
-from pybandit.bandit.bernoulli import (
-    BernoulliBandit,
-)
+from pybandit.bandit.bernoulli import BernoulliBandit
 
 np.random.seed(0)
 
@@ -42,7 +40,7 @@ def test_pull_valid_outputs():
     Test if the pull method returns only valid outputs (0 or 1).
     """
     bandit = BernoulliBandit(0.5)
-    outcomes = set(bandit.pull() for _ in range(1000))
+    outcomes = {bandit.pull() for _ in range(1000)}
     assert outcomes <= {0, 1}, "Pull method should only return 0 or 1."
 
 
