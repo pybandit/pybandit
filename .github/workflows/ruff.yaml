@@ -14,4 +14,4 @@ jobs:
           ruff format .
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'DOC: style fix by ruff'
+          commit_message: 'FIX: style fix by ruff'
