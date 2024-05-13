@@ -88,6 +88,3 @@ Participation in the PyBandit community is governed by our Code of Conduct. Plea
 ### Asking for Help
 
 If you need help at any point, feel free to ask questions in our community forum or on the GitHub issue tracker. We value your contributions and will do our best to provide support.
-
-
-
