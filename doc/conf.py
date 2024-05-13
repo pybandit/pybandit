@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.abspath("../pybandit"))
 # -- Project information -----------------------------------------------------
 
 project = "pybandit"
-copyright = "2024, tuhinsharma"
+copyright = "2024, PyBandit"
 author = "tuhinsharma121"
 
 # -- General configuration ---------------------------------------------------
