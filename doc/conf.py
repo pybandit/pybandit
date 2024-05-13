@@ -97,8 +97,9 @@ html_theme_options = {
     # "primary_sidebar_end": ["custom-template", "sidebar-ethical-ads"],
     # "article_footer_items": ["test", "test"],
     # "content_footer_items": ["test", "test"],
-    # "footer_start": ["copyright"],
-    # "footer_center": ["sphinx-version"],
+    "footer_start": ["copyright"],
+    "footer_center": ["sphinx-version"],
+    # "footer_end": [str(pydata_sphinx_theme.__version__)]
     # "secondary_sidebar_items": {
     #     "**/*": ["page-toc"]
     # }
