@@ -10,12 +10,12 @@ def read_requirements():
 setup(
     name="pybandit",
     version="0.0.0.3",
-    license='Apache 2.0',
+    license="Apache 2.0",
     description="Implementation of popular Multiarmed Bandit Algorithms",
-    author='Tuhin Sharma et al.',
-    author_email='tuhinsharma121@gmail.com',
-    long_description=open('README.md').read(),
-    long_description_content_type='text/markdown',
+    author="Tuhin Sharma et al.",
+    author_email="tuhinsharma121@gmail.com",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
     packages=find_packages(exclude=("tests",)),
     install_requires=read_requirements(),
 )
