@@ -33,10 +33,10 @@ extensions = [
     "sphinx_design",
     "IPython.sphinxext.ipython_directive",
     "IPython.sphinxext.ipython_console_highlighting",
-    "sphinx.ext.autosectionlabel"
+    "sphinx.ext.autosectionlabel",
 ]
 
-suppress_warnings = ['autosectionlabel.*']
+suppress_warnings = ["autosectionlabel.*"]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -73,12 +73,11 @@ html_theme_options = {
             "name": "GitHub",
             "url": "https://github.com/pybandit/pybandit.git",
             "icon": "fa-brands fa-github",
-        }
+        },
     ],
     # alternative way to set twitter and github header icons
     # "github_url": "https://github.com/pydata/pydata-sphinx-theme",
     # "twitter_url": "https://twitter.com/PyData",
-
     "use_edit_page_button": False,
     "show_toc_level": 1,
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly

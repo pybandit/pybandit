@@ -3,6 +3,10 @@
 </picture>
 
 -----------------
+[![PyPI Downloads](https://img.shields.io/pypi/dm/pybandit.svg?label=PyPI%20downloads)](
+https://pypi.org/project/pybandit/)
+[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pybandit.svg?label=Conda%20downloads)](
+https://anaconda.org/conda-forge/pybandit)
 
 # PyBandit : powerful multiarmed bandit toolkit
 
@@ -88,6 +92,3 @@ Participation in the PyBandit community is governed by our Code of Conduct. Plea
 ### Asking for Help
 
 If you need help at any point, feel free to ask questions in our community forum or on the GitHub issue tracker. We value your contributions and will do our best to provide support.
-
-
-
