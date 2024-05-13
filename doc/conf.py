@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.abspath("../pybandit"))
 # -- Project information -----------------------------------------------------
 
 project = "pybandit"
-copyright = "2024, tuhinsharma"
+copyright = "2024, PyBandit"
 author = "tuhinsharma121"
 
 # -- General configuration ---------------------------------------------------
@@ -67,18 +67,13 @@ html_theme_options = {
         {
             "name": "PyPI",
             "url": "https://pypi.org/project/pybandit",
-            "icon": "fa-custom fa-pypi",
+            "icon": "fa-brands fa-python",
         },
         {
             "name": "GitHub",
             "url": "https://github.com/pybandit/pybandit.git",
             "icon": "fa-brands fa-github",
-        },
-        {
-            "name": "pybandit",
-            "url": "https://pybandit.org",
-            "icon": "fa-custom fa-pydata",
-        },
+        }
     ],
     # alternative way to set twitter and github header icons
     # "github_url": "https://github.com/pydata/pydata-sphinx-theme",
@@ -97,8 +92,9 @@ html_theme_options = {
     # "primary_sidebar_end": ["custom-template", "sidebar-ethical-ads"],
     # "article_footer_items": ["test", "test"],
     # "content_footer_items": ["test", "test"],
-    # "footer_start": ["copyright"],
-    # "footer_center": ["sphinx-version"],
+    "footer_start": ["copyright"],
+    "footer_center": ["sphinx-version"],
+    # "footer_end": [str(pydata_sphinx_theme.__version__)]
     # "secondary_sidebar_items": {
     #     "**/*": ["page-toc"]
     # }
