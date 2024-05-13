@@ -67,18 +67,13 @@ html_theme_options = {
         {
             "name": "PyPI",
             "url": "https://pypi.org/project/pybandit",
-            "icon": "fa-custom fa-pypi",
+            "icon": "fa-brands fa-python",
         },
         {
             "name": "GitHub",
             "url": "https://github.com/pybandit/pybandit.git",
             "icon": "fa-brands fa-github",
-        },
-        {
-            "name": "pybandit",
-            "url": "https://pybandit.org",
-            "icon": "fa-custom fa-pydata",
-        },
+        }
     ],
     # alternative way to set twitter and github header icons
     # "github_url": "https://github.com/pydata/pydata-sphinx-theme",
