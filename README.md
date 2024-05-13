@@ -1,12 +1,10 @@
 <picture align="center">
-  <img alt="Pandas Logo" src="doc/_static/logo-pybandit.png">
+  <img alt="Pandas Logo" src="https://raw.githubusercontent.com/pybandit/pybandit/main/doc/_static/logo-pybandit.png">
 </picture>
 
 -----------------
 [![PyPI Downloads](https://img.shields.io/pypi/dm/pybandit.svg?label=PyPI%20downloads)](
 https://pypi.org/project/pybandit/)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pybandit.svg?label=Conda%20downloads)](
-https://anaconda.org/conda-forge/pybandit)
 
 # PyBandit : powerful multiarmed bandit toolkit
 
